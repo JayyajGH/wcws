@@ -22,8 +22,8 @@ export default function Hero() {
           </h1>
 
           <p className="mt-8 text-lg text-slate-500 max-w-lg leading-relaxed">
-            I’ve spent 20 years building high-performance websites. Now, I’m bringing that 
-            big-budget expertise to local businesses across the West Country.
+            I've spent 20 years building high-performance websites for large multinational companies. 
+            Now, I'm bringing that big-budget expertise to local businesses across the West Country.
           </p>
           <div className="mt-10 flex items-center gap-6">
             <button 
@@ -42,7 +42,6 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.2 }}
           className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl"
         >
-          {/* Replace the src with a real image URL later */}
           <img 
             src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1200" 
             alt="Modern Office Architecture"
