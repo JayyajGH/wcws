@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a; /* A slightly softer dark slate for a modern look */
+}
+
+/* This ensures the 'clean' look by smoothing out fonts and behavior */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased text-slate-900 bg-white;
+    /* This makes text rendering much crisper on high-res screens */
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+}
+
+/* Optional: Custom Selection color to match your brand */
+::selection {
+  background-color: #2563eb; /* Blue accent */
+  color: white;
+}
