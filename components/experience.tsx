@@ -22,7 +22,7 @@ export default function Standards() {
                 Designed to be <br/><span className="text-blue-500 italic">distinct.</span>
               </h3>
               <p className="mt-6 lg:mt-8 text-lg text-slate-400 leading-relaxed max-w-md">
-                Small businesses don’t need "standard." I create unique digital 
+                Small businesses don't need "standard." I create unique digital 
                 identities that capture the craft and personality behind your work.
               </p>
             </motion.div>

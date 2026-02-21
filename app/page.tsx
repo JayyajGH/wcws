@@ -2,6 +2,7 @@ import Hero from '@/components/hero';
 import Services from '@/components/services';
 import Experience from '@/components/experience';
 import AuthoritySection from '@/components/authority';
+import Portfolio from "@/components/portfolio";
 import Contact from '@/components/contact';
 
 export default function Home() {
@@ -11,8 +12,8 @@ export default function Home() {
       <Services />
       <Experience />
       <AuthoritySection />
+      <Portfolio />
       <Contact />
-      {/* You can add a Footer and Navbar here later */}
     </main>
   );
 }
