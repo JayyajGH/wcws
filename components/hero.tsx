@@ -47,6 +47,9 @@ export default function Hero() {
             I spent 20 years building high-performance systems for multinationals. 
             Now, I'm bringing that same big-budget expertise to local businesses.
           </p>
+          <p className="mt-6 lg:mt-8 text-base lg:text-lg text-slate-500 max-w-lg leading-relaxed">
+            You could have a website just like this one.
+          </p>
 
           <div className="mt-8 lg:mt-10">
             <button 
