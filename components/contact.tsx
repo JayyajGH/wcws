@@ -63,13 +63,72 @@ function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-      <input name="name" placeholder="Name" required disabled={isLoading} className="p-4 rounded-xl ring-1 ring-slate-200 outline-none focus:ring-2 focus:ring-blue-600 disabled:bg-slate-100 transition-all" />
-      <input name="email" type="email" placeholder="Email" required disabled={isLoading} className="p-4 rounded-xl ring-1 ring-slate-200 outline-none focus:ring-2 focus:ring-blue-600 disabled:bg-slate-100 transition-all" />
-      <textarea name="message" placeholder="Project details..." rows={5} required disabled={isLoading} className="p-4 rounded-xl ring-1 ring-slate-200 outline-none focus:ring-2 focus:ring-blue-600 resize-none disabled:bg-slate-100 transition-all" />
+      <div>
+      <label htmlFor="name" className="block text-sm font-semibold text-slate-700 mb-2">
+        Full Name
+      </label>
+      <input
+        name="name"
+        type="text"
+        id="name"
+        required
+        disabled={isLoading}
+        className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all"
+      />
+      </div>
+      <div>
+        <label htmlFor="email" className="block text-sm font-semibold text-slate-700 mb-2">
+          Email Address
+        </label>
+        <input
+          name="email"
+          type="email"
+          id="email"
+          required
+          disabled={isLoading}
+          className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all"
+        />
+      </div>
+      
+      <div>
+        <label htmlFor="message" className="block text-sm font-semibold text-slate-700 mb-2">
+          How can I help?
+        </label>
+        <textarea
+          name="message"
+          id="message"
+          rows={5}
+          required
+          disabled={isLoading}
+          className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all resize-none"
+        ></textarea>
+      </div>
       
       <button type="submit" disabled={isLoading} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all active:scale-[0.98] disabled:bg-blue-400">
         {isLoading ? <><Loader2 className="animate-spin" size={20} /> Sending...</> : <><Send size={18} /> Send Message</>}
       </button>
+
+      <p className="text-[11px] text-center text-slate-400 leading-relaxed mt-4">
+        This site is protected by reCAPTCHA and the Google{" "}
+        <a 
+          href="https://policies.google.com/privacy" 
+          target="_blank" 
+          rel="noreferrer" 
+          className="underline hover:text-blue-600 transition-colors"
+        >
+          Privacy Policy
+        </a>{" "}
+        and{" "}
+        <a 
+          href="https://policies.google.com/terms" 
+          target="_blank" 
+          rel="noreferrer" 
+          className="underline hover:text-blue-600 transition-colors"
+        >
+          Terms of Service
+        </a>{" "}
+        apply.
+      </p>
 
       {status === "error" && (
         <div data-testid="error-container" className="flex items-center justify-center gap-2 text-red-500 text-sm font-medium animate-pulse">

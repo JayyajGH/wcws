@@ -23,3 +23,9 @@
   background-color: #2563eb; /* Blue accent */
   color: white;
 }
+
+/* Hide the standard Google recaptcha badge */
+.grecaptcha-badge { 
+  visibility: hidden !important; 
+}
+
