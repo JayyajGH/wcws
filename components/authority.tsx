@@ -24,8 +24,8 @@ export default function AuthoritySection() {
           </motion.h2>
           <p className="mt-6 text-lg text-slate-500 leading-relaxed max-w-md">
             Since 2004, I’ve been engineering high-stakes digital platforms. 
-            From the fast-paced world of **Online Retail** to the precision-driven 
-            requirements of **Financial Services**.
+            From the fast-paced world of online retail to the precision-driven 
+            requirements of financial services.
           </p>
         </div>
 
