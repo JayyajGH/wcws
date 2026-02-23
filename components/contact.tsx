@@ -69,7 +69,7 @@ function ContactForm() {
         </h2>
         <p className="text-lg text-slate-500">
           Ready to give your business the digital home it deserves? 
-          Drop me a message below and I'll get back to you.
+          Drop me a message below and I&apos;ll get back to you.
         </p>
       </div>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
