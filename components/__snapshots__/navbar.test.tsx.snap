@@ -1,0 +1,44 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Navbar > matches the initial render snapshot 1`] = `
+<DocumentFragment>
+  <nav
+    class="fixed top-0 w-full z-50 px-6 py-6"
+    style="opacity: 0; transform: translateY(-20px);"
+  >
+    <div
+      class="max-w-7xl mx-auto flex justify-between items-center bg-white/70 backdrop-blur-md border border-white/20 px-8 py-4 rounded-full shadow-sm"
+    >
+      <div
+        class="flex items-center gap-2"
+      >
+        <div
+          class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-black"
+        >
+          W
+        </div>
+        <span
+          class="text-xl font-bold tracking-tighter text-slate-900"
+        >
+          West Country 
+          <span
+            class="text-blue-600"
+          >
+            Web Solutions
+          </span>
+        </span>
+      </div>
+      <div
+        class="hidden md:flex items-center gap-8"
+      >
+        <a
+          class="bg-slate-900 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-blue-600 transition-all"
+          href="#contact"
+        >
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </nav>
+</DocumentFragment>
+`;
