@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Standards() {
@@ -31,7 +32,13 @@ export default function Standards() {
           <div className="w-full md:w-1/2 relative">
              <div className="absolute -inset-10 bg-blue-600/20 blur-[100px] rounded-full opacity-50" />
              <div className="relative aspect-video bg-slate-800 rounded-[2rem] overflow-hidden shadow-2xl border border-white/10">
-                <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&q=80&w=800" alt="Design detail" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+                <Image
+                  src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&q=80&w=800"
+                  alt="Design detail"
+                  fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                />
              </div>
           </div>
         </div>
@@ -61,7 +68,13 @@ export default function Standards() {
           <div className="w-full md:w-1/2 relative">
              <div className="absolute -inset-10 bg-blue-900/20 blur-[100px] rounded-full opacity-50" />
              <div className="relative aspect-video bg-slate-800 rounded-[2rem] overflow-hidden shadow-2xl border border-white/10">
-                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" alt="Code detail" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+                <Image
+                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
+                  alt="Code detail"
+                  fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                />
              </div>
           </div>
         </div>
