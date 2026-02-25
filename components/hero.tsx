@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
@@ -19,10 +20,12 @@ export default function Hero() {
           
           {/* Reduced mobile aspect ratio to 16/9 to keep it punchy and short */}
           <div className="relative aspect-video lg:aspect-[4/5] w-full rounded-[2rem] lg:rounded-[2.5rem] overflow-hidden shadow-xl lg:shadow-2xl border border-slate-100">
-            <img 
-              src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1200" 
+            <Image
+              src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1200"
               alt="Local retail boutique"
-              className="object-cover w-full h-full hover:scale-105 transition-transform duration-1000"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover hover:scale-105 transition-transform duration-1000"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent" />
           </div>
