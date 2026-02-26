@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "West Country Website Solutions",
+  title: "West Country Web Solutions",
   description: "Expert web design for small businesses",
   icons: {
     icon: [
