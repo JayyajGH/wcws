@@ -36,6 +36,14 @@ describe('Portfolio', () => {
     expect(screen.getByText(/electrician/i)).toBeInTheDocument();
   });
 
+  it('renders projects with href as links', () => {
+    factory.render();
+
+    const linkedProject = screen.getByRole('link', { name: /82electrical/i });
+    expect(linkedProject).toBeInTheDocument();
+    expect(linkedProject).toHaveAttribute('href', 'https://82electrical.co.uk');
+  });
+
   it('matches the initial render snapshot', () => {
     factory.render();
     expect(factory.snapshot()).toMatchSnapshot();
