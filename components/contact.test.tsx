@@ -28,10 +28,10 @@ describe('Contact Page API Integration', () => {
 
   it('submits the correct payload to the AWS Lambda endpoint', async () => {
     // 2. Mock a successful AWS Response
-    (global.fetch as any).mockResolvedValue({
+    vi.mocked(global.fetch).mockResolvedValue({
       ok: true,
       json: async () => ({ message: "Success" }),
-    });
+    } as Response);
 
     factory.render();
 
@@ -39,7 +39,7 @@ describe('Contact Page API Integration', () => {
     fireEvent.change(screen.getByLabelText(/full name/i), { target: { value: 'Mr Tester' } });
     fireEvent.change(screen.getByLabelText(/email address/i), { target: { value: 'hello@wcws.co.uk' } });
     fireEvent.change(screen.getByLabelText(/how can i help/i), { target: { value: 'I need a website.' } });
-    
+
     // Submit
     fireEvent.click(screen.getByRole('button', { name: /send message/i }));
 
@@ -62,11 +62,11 @@ describe('Contact Page API Integration', () => {
 
   it('handles AWS server-side errors (500) gracefully', async () => {
     // 1. Mock the failure response
-    (global.fetch as any).mockResolvedValue({
+    vi.mocked(global.fetch).mockResolvedValue({
       ok: false,
       status: 500,
       json: async () => ({ error: "Internal Server Error" }),
-    });
+    } as Response);
 
     factory.render();
 
@@ -83,16 +83,16 @@ describe('Contact Page API Integration', () => {
     const errorContainer = await screen.findByTestId('error-container');
     expect(errorContainer).toBeInTheDocument();
     expect(screen.getByText(/something went wrong/i)).toBeInTheDocument();
-    
+
     // Verify inputs are re-enabled
     expect(screen.getByLabelText(/full name/i)).not.toBeDisabled();
   });
 
   it('resets form state when "Send another message" is clicked', async () => {
-    (global.fetch as any).mockResolvedValue({
+    vi.mocked(global.fetch).mockResolvedValue({
       ok: true,
       json: async () => ({ success: true }),
-    });
+    } as Response);
 
     factory.render();
 
@@ -105,8 +105,8 @@ describe('Contact Page API Integration', () => {
     fireEvent.click(screen.getByRole('button', { name: /send message/i }));
 
     // findByRole will now successfully wait for the async submission to finish
-    const resetButton = await screen.findByRole('button', { 
-      name: /send another message/i 
+    const resetButton = await screen.findByRole('button', {
+      name: /send another message/i
     });
 
     expect(resetButton).toBeInTheDocument();
