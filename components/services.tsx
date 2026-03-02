@@ -5,7 +5,7 @@ import { Monitor, Smartphone, PenTool, Zap } from "lucide-react";
 const services = [
   {
     title: "Bespoke Web Design",
-    description: "No templates. Every site is built from scratch to fit your brand's unique personality and local West Country roots.",
+    description: "No templates. Every site is built from scratch to fit your brand's unique personality.",
     icon: <PenTool className="text-blue-600" size={24} />,
   },
   {

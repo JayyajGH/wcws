@@ -70,7 +70,7 @@ exports[`Services > matches the initial render snapshot 1`] = `
           <p
             class="text-slate-500 text-sm leading-relaxed"
           >
-            No templates. Every site is built from scratch to fit your brand's unique personality and local West Country roots.
+            No templates. Every site is built from scratch to fit your brand's unique personality.
           </p>
         </div>
         <div
