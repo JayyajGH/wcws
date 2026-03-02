@@ -31,14 +31,14 @@ exports[`AuthoritySection > matches the initial render snapshot 1`] = `
         class="grid gap-4"
       >
         <div
-          class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:shadow-sm transition-all group"
+          class="p-6 rounded-2xl bg-slate-50 border border-slate-100"
           style="opacity: 0; transform: translateY(10px);"
         >
           <div
             class="flex items-center gap-4"
           >
             <div
-              class="p-3 rounded-xl bg-white text-blue-600 shadow-sm group-hover:bg-blue-600 group-hover:text-white transition-colors"
+              class="p-3 rounded-xl bg-white text-blue-600 shadow-sm"
             >
               <svg
                 aria-hidden="true"
@@ -79,14 +79,14 @@ exports[`AuthoritySection > matches the initial render snapshot 1`] = `
           </div>
         </div>
         <div
-          class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:shadow-sm transition-all group"
+          class="p-6 rounded-2xl bg-slate-50 border border-slate-100"
           style="opacity: 0; transform: translateY(10px);"
         >
           <div
             class="flex items-center gap-4"
           >
             <div
-              class="p-3 rounded-xl bg-white text-blue-600 shadow-sm group-hover:bg-blue-600 group-hover:text-white transition-colors"
+              class="p-3 rounded-xl bg-white text-blue-600 shadow-sm"
             >
               <svg
                 aria-hidden="true"
@@ -124,14 +124,14 @@ exports[`AuthoritySection > matches the initial render snapshot 1`] = `
           </div>
         </div>
         <div
-          class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:shadow-sm transition-all group"
+          class="p-6 rounded-2xl bg-slate-50 border border-slate-100"
           style="opacity: 0; transform: translateY(10px);"
         >
           <div
             class="flex items-center gap-4"
           >
             <div
-              class="p-3 rounded-xl bg-white text-blue-600 shadow-sm group-hover:bg-blue-600 group-hover:text-white transition-colors"
+              class="p-3 rounded-xl bg-white text-blue-600 shadow-sm"
             >
               <svg
                 aria-hidden="true"

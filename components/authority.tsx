@@ -12,9 +12,9 @@ export default function AuthoritySection() {
   return (
     <section className="py-24 bg-white border-y border-slate-100">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        
+
         <div>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight"
@@ -23,8 +23,8 @@ export default function AuthoritySection() {
             <span className="text-blue-600">regulated industries.</span>
           </motion.h2>
           <p className="mt-6 text-lg text-slate-500 leading-relaxed max-w-md">
-            Since 2004, I&apos;ve been engineering high-stakes digital platforms. 
-            From the fast-paced world of online retail to the precision-driven 
+            Since 2004, I&apos;ve been engineering high-stakes digital platforms.
+            From the fast-paced world of online retail to the precision-driven
             requirements of financial services.
           </p>
         </div>
@@ -36,10 +36,10 @@ export default function AuthoritySection() {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:shadow-sm transition-all group"
+              className="p-6 rounded-2xl bg-slate-50 border border-slate-100"
             >
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-xl bg-white text-blue-600 shadow-sm group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                <div className="p-3 rounded-xl bg-white text-blue-600 shadow-sm">
                   {sector.icon}
                 </div>
                 <div>
@@ -50,7 +50,7 @@ export default function AuthoritySection() {
             </motion.div>
           ))}
         </div>
-        
+
       </div>
     </section>
   );
