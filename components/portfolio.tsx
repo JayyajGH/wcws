@@ -12,6 +12,12 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "82Electrical",
+    category: "Electrician",
+    image: "/82electrical.png",
+    href: "https://82electrical.co.uk",
+  },
+  {
     title: "Pops Place",
     category: "Burger Bar",
     image: "/pops.png",
@@ -20,12 +26,6 @@ const projects: Project[] = [
     title: "Brendan's Brewtique",
     category: "Beer retailer",
     image: "/brewtique.png",
-  },
-  {
-    title: "82Electrical",
-    category: "Electrician",
-    image: "/82electrical.png",
-    href: "https://82electrical.co.uk",
   },
 ];
 

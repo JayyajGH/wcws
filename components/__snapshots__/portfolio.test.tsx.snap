@@ -34,6 +34,47 @@ exports[`Portfolio > matches the initial render snapshot 1`] = `
           class="group"
           style="opacity: 0; transform: translateY(20px);"
         >
+          <a
+            class="block cursor-pointer"
+            href="https://82electrical.co.uk"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div
+              class="relative aspect-[4/3] overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-500 group-hover:shadow-md"
+            >
+              <img
+                alt="82Electrical"
+                class="object-cover transition-transform duration-500 group-hover:scale-105"
+                data-nimg="fill"
+                decoding="async"
+                loading="lazy"
+                sizes="100vw"
+                src="/_next/image?url=%2F82electrical.png&w=3840&q=75"
+                srcset="/_next/image?url=%2F82electrical.png&w=640&q=75 640w, /_next/image?url=%2F82electrical.png&w=750&q=75 750w, /_next/image?url=%2F82electrical.png&w=828&q=75 828w, /_next/image?url=%2F82electrical.png&w=1080&q=75 1080w, /_next/image?url=%2F82electrical.png&w=1200&q=75 1200w, /_next/image?url=%2F82electrical.png&w=1920&q=75 1920w, /_next/image?url=%2F82electrical.png&w=2048&q=75 2048w, /_next/image?url=%2F82electrical.png&w=3840&q=75 3840w"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+              />
+            </div>
+            <div
+              class="mt-6 px-2"
+            >
+              <span
+                class="text-xs font-semibold uppercase tracking-wider text-blue-600"
+              >
+                Electrician
+              </span>
+              <h3
+                class="text-xl font-bold text-slate-900 mt-1 transition-colors group-hover:text-blue-700"
+              >
+                82Electrical
+              </h3>
+            </div>
+          </a>
+        </div>
+        <div
+          class="group"
+          style="opacity: 0; transform: translateY(20px);"
+        >
           <div
             class="block cursor-default"
           >
@@ -105,47 +146,6 @@ exports[`Portfolio > matches the initial render snapshot 1`] = `
               </h3>
             </div>
           </div>
-        </div>
-        <div
-          class="group"
-          style="opacity: 0; transform: translateY(20px);"
-        >
-          <a
-            class="block cursor-pointer"
-            href="https://82electrical.co.uk"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <div
-              class="relative aspect-[4/3] overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-500 group-hover:shadow-md"
-            >
-              <img
-                alt="82Electrical"
-                class="object-cover transition-transform duration-500 group-hover:scale-105"
-                data-nimg="fill"
-                decoding="async"
-                loading="lazy"
-                sizes="100vw"
-                src="/_next/image?url=%2F82electrical.png&w=3840&q=75"
-                srcset="/_next/image?url=%2F82electrical.png&w=640&q=75 640w, /_next/image?url=%2F82electrical.png&w=750&q=75 750w, /_next/image?url=%2F82electrical.png&w=828&q=75 828w, /_next/image?url=%2F82electrical.png&w=1080&q=75 1080w, /_next/image?url=%2F82electrical.png&w=1200&q=75 1200w, /_next/image?url=%2F82electrical.png&w=1920&q=75 1920w, /_next/image?url=%2F82electrical.png&w=2048&q=75 2048w, /_next/image?url=%2F82electrical.png&w=3840&q=75 3840w"
-                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-              />
-            </div>
-            <div
-              class="mt-6 px-2"
-            >
-              <span
-                class="text-xs font-semibold uppercase tracking-wider text-blue-600"
-              >
-                Electrician
-              </span>
-              <h3
-                class="text-xl font-bold text-slate-900 mt-1 transition-colors group-hover:text-blue-700"
-              >
-                82Electrical
-              </h3>
-            </div>
-          </a>
         </div>
       </div>
     </div>
