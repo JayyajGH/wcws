@@ -12,6 +12,7 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     globals: true,
+    pool: 'threads',
     setupFiles: './vitest.setup.ts',
     coverage: {
       provider: 'v8', 
