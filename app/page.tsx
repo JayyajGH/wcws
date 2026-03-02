@@ -1,7 +1,6 @@
 import Hero from '@/components/hero';
 import Services from '@/components/services';
 import Experience from '@/components/experience';
-import AuthoritySection from '@/components/authority';
 import Portfolio from "@/components/portfolio";
 import Contact from '@/components/contact';
 
@@ -11,7 +10,6 @@ export default function Home() {
       <Hero />
       <Services />
       <Experience />
-      <AuthoritySection />
       <Portfolio />
       <Contact />
     </main>
