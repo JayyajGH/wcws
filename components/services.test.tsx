@@ -31,7 +31,7 @@ describe('Services', () => {
     expect(screen.getByText(/bespoke web design/i)).toBeInTheDocument();
     expect(screen.getByText(/small business focus/i)).toBeInTheDocument();
     expect(screen.getByText(/mobile-first build/i)).toBeInTheDocument();
-    expect(screen.getByText(/20 years of speed/i)).toBeInTheDocument();
+    expect(screen.getByText(/built for speed/i)).toBeInTheDocument();
   });
 
   it('matches the initial render snapshot', () => {

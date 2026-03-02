@@ -19,7 +19,7 @@ const services = [
     icon: <Smartphone className="text-blue-600" size={24} />,
   },
   {
-    title: "20 Years of Speed",
+    title: "Built for Speed",
     description: "Built using modern tech (Next.js & AWS) so your site loads instantly—crucial for keeping customers on your page.",
     icon: <Zap className="text-blue-600" size={24} />,
   },
