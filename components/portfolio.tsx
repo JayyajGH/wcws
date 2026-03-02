@@ -52,13 +52,13 @@ export default function Portfolio() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group"
+              className={project.href ? "group" : ""}
             >
               {/* If href exists, wrap in a Link; otherwise just a div */}
               {project.href ? (
-                <Link 
-                  href={project.href} 
-                  target="_blank" 
+                <Link
+                  href={project.href}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="block cursor-pointer"
                 >
@@ -81,12 +81,12 @@ export default function Portfolio() {
 function ProjectContent({ project }: { project: Project }) {
   return (
     <>
-      <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-500 group-hover:shadow-md">
+      <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 group-hover:ring-2 group-hover:ring-slate-300">
         <Image
           src={project.image}
           alt={project.title}
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className="object-cover"
         />
       </div>
       <div className="mt-6 px-2">

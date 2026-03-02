@@ -41,11 +41,11 @@ exports[`Portfolio > matches the initial render snapshot 1`] = `
             target="_blank"
           >
             <div
-              class="relative aspect-[4/3] overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-500 group-hover:shadow-md"
+              class="relative aspect-[4/3] overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 group-hover:ring-2 group-hover:ring-slate-300"
             >
               <img
                 alt="82Electrical"
-                class="object-cover transition-transform duration-500 group-hover:scale-105"
+                class="object-cover"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
@@ -72,18 +72,18 @@ exports[`Portfolio > matches the initial render snapshot 1`] = `
           </a>
         </div>
         <div
-          class="group"
+          class=""
           style="opacity: 0; transform: translateY(20px);"
         >
           <div
             class="block cursor-default"
           >
             <div
-              class="relative aspect-[4/3] overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-500 group-hover:shadow-md"
+              class="relative aspect-[4/3] overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 group-hover:ring-2 group-hover:ring-slate-300"
             >
               <img
                 alt="Pops Place"
-                class="object-cover transition-transform duration-500 group-hover:scale-105"
+                class="object-cover"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
@@ -110,18 +110,18 @@ exports[`Portfolio > matches the initial render snapshot 1`] = `
           </div>
         </div>
         <div
-          class="group"
+          class=""
           style="opacity: 0; transform: translateY(20px);"
         >
           <div
             class="block cursor-default"
           >
             <div
-              class="relative aspect-[4/3] overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-500 group-hover:shadow-md"
+              class="relative aspect-[4/3] overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 group-hover:ring-2 group-hover:ring-slate-300"
             >
               <img
                 alt="Brendan's Brewtique"
-                class="object-cover transition-transform duration-500 group-hover:scale-105"
+                class="object-cover"
                 data-nimg="fill"
                 decoding="async"
                 loading="lazy"
