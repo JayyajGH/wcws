@@ -24,7 +24,7 @@ export default function Standards() {
               </h3>
               <p className="mt-6 lg:mt-8 text-lg text-slate-400 leading-relaxed max-w-md">
                 Small businesses don&apos;t need &quot;standard.&quot; I create unique digital 
-                identities that capture the craft and personality behind your work.
+                identities that capture the craft and personality behind your business.
               </p>
             </motion.div>
           </div>

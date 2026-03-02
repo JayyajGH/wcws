@@ -41,7 +41,7 @@ exports[`Experience section > matches the initial render snapshot 1`] = `
             <p
               class="mt-6 lg:mt-8 text-lg text-slate-400 leading-relaxed max-w-md"
             >
-              Small businesses don't need "standard." I create unique digital identities that capture the craft and personality behind your work.
+              Small businesses don't need "standard." I create unique digital identities that capture the craft and personality behind your business.
             </p>
           </div>
         </div>
