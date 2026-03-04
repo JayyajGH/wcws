@@ -1,10 +1,10 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Services > matches the initial render snapshot 1`] = `
+exports[`Features > matches the initial render snapshot 1`] = `
 <DocumentFragment>
   <section
     class="py-24 bg-white"
-    id="services"
+    id="features"
   >
     <div
       class="max-w-7xl mx-auto px-6"

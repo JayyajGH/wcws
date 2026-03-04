@@ -1,19 +1,19 @@
 import { screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
-import Services from './services';
+import Features from './features';
 import { ComponentFactory } from '../../test/__factories__/ComponentFactory';
 
-class ServicesFactory extends ComponentFactory<Record<string, never>> {
-  protected component = Services;
+class FeaturesFactory extends ComponentFactory<Record<string, never>> {
+  protected component = Features;
 
   constructor() {
     super({});
   }
 }
 
-const factory = new ServicesFactory();
+const factory = new FeaturesFactory();
 
-describe('Services', () => {
+describe('Features', () => {
   it('renders the section heading and description', () => {
     factory.render();
 
@@ -39,4 +39,3 @@ describe('Services', () => {
     expect(factory.snapshot()).toMatchSnapshot();
   });
 });
-

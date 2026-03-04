@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { Monitor, Smartphone, PenTool, Zap } from "lucide-react";
 
-const services = [
+const features = [
   {
     title: "Bespoke Web Design",
     description: "No templates. Every site is built from scratch to fit your brand's unique personality.",
@@ -25,9 +25,9 @@ const services = [
   },
 ];
 
-export default function Services() {
+export default function Features() {
   return (
-    <section id="services" className="py-24 bg-white">
+    <section id="features" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-2xl mb-16">
           <h2 className="text-4xl font-bold text-slate-900 tracking-tight mb-4">
@@ -40,7 +40,7 @@ export default function Services() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => (
+          {features.map((feature, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -50,11 +50,11 @@ export default function Services() {
               className="p-8 rounded-3xl bg-slate-50 border border-slate-100"
             >
               <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm mb-6">
-                {service.icon}
+                {feature.icon}
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">{service.title}</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">{feature.title}</h3>
               <p className="text-slate-500 text-sm leading-relaxed">
-                {service.description}
+                {feature.description}
               </p>
             </motion.div>
           ))}
