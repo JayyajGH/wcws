@@ -3,10 +3,10 @@ import { render, RenderResult } from '@testing-library/react';
 
 export type ComponentFactoryOptions<P> = {
     props?: Partial<P>;
-    attrs?: Record<string, any>; 
+    attrs?: Record<string, unknown>;
 };
 
-export abstract class ComponentFactory<P extends Record<string, any>> {
+export abstract class ComponentFactory<P extends Record<string, unknown>> {
     protected abstract component: React.ComponentType<P>;
     protected defaultProps: P;
 
@@ -36,7 +36,7 @@ export abstract class ComponentFactory<P extends Record<string, any>> {
         const { asFragment } = this.render(options);
         return asFragment();
     }
-    
+
     getProps(overrides: Partial<P> = {}): P {
         return this.createProps(overrides);
     }
