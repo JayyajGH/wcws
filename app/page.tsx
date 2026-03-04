@@ -1,8 +1,8 @@
-import Hero from '@/components/hero';
-import Services from '@/components/services';
-import Experience from '@/components/experience';
-import Portfolio from "@/components/portfolio";
-import Contact from '@/components/contact';
+import Hero from '@/components/hero/hero';
+import Services from '@/components/services/services';
+import Experience from '@/components/experience/experience';
+import Portfolio from "@/components/portfolio/portfolio";
+import Contact from '@/components/contact/contact';
 
 export default function Home() {
   return (

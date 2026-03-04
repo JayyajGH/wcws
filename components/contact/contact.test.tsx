@@ -1,7 +1,7 @@
 import { screen, fireEvent, waitFor } from '@testing-library/react';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import ContactPage from './contact';
-import { ComponentFactory } from '../test/__factories__/ComponentFactory';
+import { ComponentFactory } from '../../test/__factories__/ComponentFactory';
 
 // 1. Mock reCAPTCHA locally
 vi.mock('react-google-recaptcha-v3', () => ({

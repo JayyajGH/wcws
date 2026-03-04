@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import Navbar from './navbar';
-import { ComponentFactory } from '../test/__factories__/ComponentFactory';
+import { ComponentFactory } from '../../test/__factories__/ComponentFactory';
 
 class NavbarFactory extends ComponentFactory<Record<string, never>> {
   protected component = Navbar;

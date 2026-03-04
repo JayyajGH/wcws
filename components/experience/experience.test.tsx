@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import ExperienceSection from './experience';
-import { ComponentFactory } from '../test/__factories__/ComponentFactory';
+import { ComponentFactory } from '../../test/__factories__/ComponentFactory';
 
 class ExperienceSectionFactory extends ComponentFactory<Record<string, never>> {
   protected component = ExperienceSection;

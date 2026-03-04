@@ -1,7 +1,7 @@
 import { screen, fireEvent } from '@testing-library/react';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import Hero from './hero';
-import { ComponentFactory } from '../test/__factories__/ComponentFactory';
+import { ComponentFactory } from '../../test/__factories__/ComponentFactory';
 
 class HeroFactory extends ComponentFactory<Record<string, never>> {
   protected component = Hero;
