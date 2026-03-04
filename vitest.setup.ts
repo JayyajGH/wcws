@@ -1,8 +1,9 @@
+import { vi } from 'vitest';
 import '@testing-library/jest-dom/vitest';
 
 // Polyfill IntersectionObserver for framer-motion viewport features in tests
-if (typeof (global as any).IntersectionObserver === 'undefined') {
-  class MockIntersectionObserver {
+if (typeof global.IntersectionObserver === 'undefined') {
+  class MockIntersectionObserver implements Partial<IntersectionObserver> {
     callback: IntersectionObserverCallback;
     options?: IntersectionObserverInit;
 
@@ -42,6 +43,5 @@ if (typeof (global as any).IntersectionObserver === 'undefined') {
     }
   }
 
-  (global as any).IntersectionObserver = MockIntersectionObserver;
+  vi.stubGlobal('IntersectionObserver', MockIntersectionObserver);
 }
-
