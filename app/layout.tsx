@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "West Country Web Solutions",
-  description: "Expert web design for small businesses",
+  description: "High-performance web design and SEO for businesses across the UK. Based in the West Country, we build fast sites for clients in the West Country and beyond.",
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     ],
   },
   manifest: '/site.webmanifest',
+  openGraph: {
+    title: 'West Country Web Solutions | UK Web Design',
+    description: 'Bespoke, high-speed websites for businesses in the West Country and across the UK.',
+    url: 'https://westcountrywebsolutions.co.uk',
+    siteName: 'West Country Web Solutions',
+    locale: 'en_GB',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
