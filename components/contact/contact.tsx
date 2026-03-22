@@ -24,7 +24,7 @@ function ContactForm() {
 
     try {
       const token = await executeRecaptcha('contact_submit');
-      const response = await fetch("https://h95xjanbk7.execute-api.eu-west-1.amazonaws.com/default/contactHandler", {
+      const response = await fetch("https://api.westcountrywebsolutions.co.uk/contactHandler", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, message, recaptchaToken: token }),
