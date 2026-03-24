@@ -15,6 +15,10 @@ function ContactForm() {
     const email = formData.get("email");
     const message = formData.get("message");
 
+    if (typeof message === "string" && message.length > 750) {
+      return;
+    }
+
     if (!executeRecaptcha) {
       console.error("reCAPTCHA not ready");
       return;
