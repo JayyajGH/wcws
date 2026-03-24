@@ -9,7 +9,7 @@ function ContactForm() {
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const formElement = e.currentTarget; 
+    const formElement = e.currentTarget;
     const formData = new FormData(formElement);
     const name = formData.get("name");
     const email = formData.get("email");
@@ -49,8 +49,8 @@ function ContactForm() {
         <CheckCircle className="mx-auto text-green-500 mb-4" size={56} />
         <h2 className="text-2xl font-bold text-slate-900">Talk soon.</h2>
         <p className="text-slate-500 mt-2">Your message is in my inbox.</p>
-        <button 
-          onClick={() => setStatus("idle")} 
+        <button
+          onClick={() => setStatus("idle")}
           className="mt-6 text-sm text-blue-600 hover:underline"
         >
           Send another message
@@ -68,23 +68,24 @@ function ContactForm() {
           Let’s start a conversation.
         </h2>
         <p className="text-lg text-slate-500">
-          Ready to give your business the digital home it deserves? 
+          Ready to give your business the digital home it deserves?
           Drop me a message below and I&apos;ll get back to you.
         </p>
       </div>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <div>
-        <label htmlFor="name" className="block text-sm font-semibold text-slate-700 mb-2">
-          Full Name
-        </label>
-        <input
-          name="name"
-          type="text"
-          id="name"
-          required
-          disabled={isLoading}
-          className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all"
-        />
+          <label htmlFor="name" className="block text-sm font-semibold text-slate-700 mb-2">
+            Full Name
+          </label>
+          <input
+            name="name"
+            type="text"
+            id="name"
+            required
+            maxLength={100}
+            disabled={isLoading}
+            className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all"
+          />
         </div>
         <div>
           <label htmlFor="email" className="block text-sm font-semibold text-slate-700 mb-2">
@@ -94,12 +95,13 @@ function ContactForm() {
             name="email"
             type="email"
             id="email"
+            maxLength={100}
             required
             disabled={isLoading}
             className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all"
           />
         </div>
-        
+
         <div>
           <label htmlFor="message" className="block text-sm font-semibold text-slate-700 mb-2">
             How can I help?
@@ -108,31 +110,32 @@ function ContactForm() {
             name="message"
             id="message"
             rows={5}
+            maxLength={750}
             required
             disabled={isLoading}
             className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all resize-none"
           ></textarea>
         </div>
-        
+
         <button type="submit" disabled={isLoading} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all active:scale-[0.98] disabled:bg-blue-400">
           {isLoading ? <><Loader2 className="animate-spin" size={20} /> Sending...</> : <><Send size={18} /> Send Message</>}
         </button>
 
         <p className="text-[11px] text-center text-slate-400 leading-relaxed mt-4">
           This site is protected by reCAPTCHA and the Google{" "}
-          <a 
-            href="https://policies.google.com/privacy" 
-            target="_blank" 
-            rel="noreferrer" 
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noreferrer"
             className="underline hover:text-blue-600 transition-colors"
           >
             Privacy Policy
           </a>{" "}
           and{" "}
-          <a 
-            href="https://policies.google.com/terms" 
-            target="_blank" 
-            rel="noreferrer" 
+          <a
+            href="https://policies.google.com/terms"
+            target="_blank"
+            rel="noreferrer"
             className="underline hover:text-blue-600 transition-colors"
           >
             Terms of Service
